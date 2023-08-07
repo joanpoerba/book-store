@@ -203,6 +203,8 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* my code */
+
 ::-webkit-scrollbar{
   width: 0;
   background: transparent;
@@ -246,6 +248,8 @@ main{
 .card:hover h3{
   opacity: 0 !important;
 }
+
+/* end of my code */
 
 hr {
   margin: 1rem 0;
