@@ -27,13 +27,13 @@
           <img
             style="width: 60px"
             class="img-fluid"
-            src="asset/logo.png"
+            src="asset/logo.webp"
             alt="book store logo"
           />
-          <h3 class="ms-3 fw-bold">
+          <a href="#home" class="h3 text-decoration-none ms-3 fw-bold">
             <span class="textPrimaryColor">Book</span>
             <span class="textSecondaryColor">Store</span>
-          </h3>
+          </a>
         </div>
         <form
           action=""
@@ -49,10 +49,12 @@
         <nav>
           <ul class="d-flex flex-row gap-5 m-0 p-0">
             <li class="list-unstyled">
-              <a href="" class="text-decoration-none text-dark">Category</a>
+              <a href="#categories" class="text-decoration-none text-dark"
+                >Categories</a
+              >
             </li>
             <li class="list-unstyled">
-              <a href="" class="text-decoration-none text-dark"
+              <a href="#topOfWeek" class="text-decoration-none text-dark"
                 >Top of week
                 <span class="bgPrimaryColor text-light py-2 px-2 rounded-3 ms-1"
                   >new!</span
@@ -60,10 +62,12 @@
               >
             </li>
             <li class="list-unstyled">
-              <a href="" class="text-decoration-none text-dark">Service</a>
+              <a href="#service" class="text-decoration-none text-dark"
+                >Service</a
+              >
             </li>
             <li class="list-unstyled">
-              <a href="" class="text-decoration-none text-dark">FAQ</a>
+              <a href="#faq" class="text-decoration-none text-dark">FAQ</a>
             </li>
           </ul>
         </nav>
@@ -75,6 +79,7 @@
       </section>
     </header>
     <main
+      id="home"
       class="container-fluid row p-0 m-0 justify-content-around align-items-center"
     >
       <div class="col-4">
@@ -93,14 +98,14 @@
           <a class="ms-4 textPrimaryColor fw-medium fs-5" href="">Login</a>
         </div>
       </div>
-      <img class="col-4 img-fluid" src="asset/book.png" alt="" />
+      <img class="col-4 img-fluid" src="asset/book.webp" alt="" />
     </main>
-    <section class="container-fluid bgPrimaryColor py-5 m-0">
+    <section id="categories" class="container-fluid bgPrimaryColor py-5 m-0">
       <div class="container-lg p-0">
         <h2 class="text-light fw-bold">The shop categories</h2>
         <div class="row justify-content-between mt-4 m-0">
           <div
-            style="background-image: url('asset/ensiklopedia.jpg')"
+            style="background-image: url('asset/ensiklopedia.webp')"
             class="card col-2 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">
@@ -108,13 +113,13 @@
             </h3>
           </div>
           <div
-            style="background-image: url('asset/komik.jpg')"
+            style="background-image: url('asset/komik.webp')"
             class="card col-2 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">comic</h3>
           </div>
           <div
-            style="background-image: url('asset/majalah.jpg')"
+            style="background-image: url('asset/majalah.webp')"
             class="card col-2 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">
@@ -122,7 +127,7 @@
             </h3>
           </div>
           <div
-            style="background-image: url('asset/resep.jpg')"
+            style="background-image: url('asset/resep.webp')"
             class="card col-2 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">
@@ -130,7 +135,7 @@
             </h3>
           </div>
           <div
-            style="background-image: url('asset/novel.jpg')"
+            style="background-image: url('asset/novel.webp')"
             class="card col-2 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">novel</h3>
@@ -138,7 +143,7 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid bgPrimaryColor py-5 m-0">
+    <section id="topOfWeek" class="container-fluid bgPrimaryColor py-5 m-0">
       <div class="container-lg p-0">
         <h2 class="text-light fw-bold">The top of the week</h2>
         <div class="row justify-content-between mt-4 m-0">
@@ -146,8 +151,8 @@
             <img
               style="object-fit: cover"
               class="img-fluid w-100 rounded-3"
-              src="asset/bumi.png"
-              alt=""
+              src="asset/bumi.webp"
+              alt="bumi"
             />
             <div class="mt-3">
               <div class="d-flex justify-content-between align-items-start">
@@ -197,7 +202,7 @@
             <img
               style="object-fit: cover"
               class="img-fluid w-100 rounded-3"
-              src="asset/why.jpg"
+              src="asset/why.webp"
               alt=""
             />
             <div class="mt-3">
@@ -248,7 +253,7 @@
             <img
               style="object-fit: cover"
               class="img-fluid w-100 rounded-3"
-              src="asset/utbk.jpg"
+              src="asset/utbk.webp"
               alt=""
             />
             <div class="mt-3">
@@ -299,26 +304,68 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid py-5 m-0">
-      <h2 class="container-lg textPrimaryColor fw-bold">In collaboration with</h2>
+    <section id="partner" class="container-fluid py-5 m-0">
+      <h2 class="container-lg textPrimaryColor fw-bold">
+        In collaboration with
+      </h2>
       <div class="collabWrapper container-fluid p-0">
         <div class="slide d-inline-block">
-          <img style="width: 150px; margin: 0 150px;" src="asset/erlangga.jpg" alt="">
-          <img style="width: 200px; margin: 0 150px;" src="asset/gramedia.png" alt="">
-          <img style="width: 200px; margin: 0 150px;" src="asset/bobo.png" alt="">
-          <img style="width: 200px; margin: 0 150px;" src="asset/forbes.svg" alt="">
-          <img style="width: 220px; margin: 0 150px;" src="asset/kompas.svg" alt="">
+          <img
+            style="width: 150px; margin: 0 150px"
+            src="asset/erlangga.webp"
+            alt=""
+          />
+          <img
+            style="width: 200px; margin: 0 150px"
+            src="asset/gramedia.webp"
+            alt=""
+          />
+          <img
+            style="width: 200px; margin: 0 150px"
+            src="asset/bobo.webp"
+            alt=""
+          />
+          <img
+            style="width: 200px; margin: 0 150px"
+            src="asset/forbes.svg"
+            alt=""
+          />
+          <img
+            style="width: 220px; margin: 0 150px"
+            src="asset/kompas.webp"
+            alt=""
+          />
         </div>
         <div class="slide d-inline-block">
-          <img style="width: 150px; margin: 0 150px;" src="asset/erlangga.jpg" alt="">
-          <img style="width: 200px; margin: 0 150px;" src="asset/gramedia.png" alt="">
-          <img style="width: 200px; margin: 0 150px;" src="asset/bobo.png" alt="">
-          <img style="width: 200px; margin: 0 150px;" src="asset/forbes.svg" alt="">
-          <img style="width: 220px; margin: 0 150px;" src="asset/kompas.svg" alt="">
+          <img
+            style="width: 150px; margin: 0 150px"
+            src="asset/erlangga.webp"
+            alt=""
+          />
+          <img
+            style="width: 200px; margin: 0 150px"
+            src="asset/gramedia.webp"
+            alt=""
+          />
+          <img
+            style="width: 200px; margin: 0 150px"
+            src="asset/bobo.webp"
+            alt=""
+          />
+          <img
+            style="width: 200px; margin: 0 150px"
+            src="asset/forbes.svg"
+            alt=""
+          />
+          <img
+            style="width: 220px; margin: 0 150px"
+            src="asset/kompas.webp"
+            alt=""
+          />
         </div>
       </div>
     </section>
-    <section class="container-fluid h-100 py-5 m-0">
+    <section id="brand" class="container-fluid h-100 py-5 m-0">
       <div class="container-lg p-0">
         <h2 class="textPrimaryColor fw-bold">Choose By Brand</h2>
         <div class="row gap-5 m-0 mt-5">
@@ -328,7 +375,7 @@
             <img
               style="width: 80px"
               class="img-fluid rounded-circle"
-              src="asset/erlangga.jpg"
+              src="asset/erlangga.webp"
               alt=""
             />
             <div class="ms-2">
@@ -342,7 +389,7 @@
             <img
               style="width: 80px"
               class="img-fluid rounded-circle"
-              src="asset/bukunesia.png"
+              src="asset/bukunesia.webp"
               alt=""
             />
             <div class="ms-2">
@@ -356,7 +403,7 @@
             <img
               style="width: 80px"
               class="img-fluid rounded-circle"
-              src="asset/plotPoint.png"
+              src="asset/plotPoint.webp"
               alt=""
             />
             <div class="ms-2">
@@ -370,7 +417,7 @@
             <img
               style="width: 80px"
               class="img-fluid rounded-circle"
-              src="asset/inari.jpg"
+              src="asset/inari.webp"
               alt=""
             />
             <div class="ms-2">
@@ -384,7 +431,7 @@
             <img
               style="width: 80px"
               class="img-fluid rounded-circle"
-              src="asset/twigora.jpg"
+              src="asset/twigora.webp"
               alt=""
             />
             <div class="ms-2">
@@ -398,7 +445,7 @@
             <img
               style="width: 80px"
               class="img-fluid rounded-circle"
-              src="asset/haru.jpg"
+              src="asset/haru.webp"
               alt=""
             />
             <div class="ms-2">
@@ -412,7 +459,7 @@
             <img
               style="width: 80px"
               class="img-fluid rounded-circle"
-              src="asset/metagraf.jpg"
+              src="asset/metagraf.webp"
               alt=""
             />
             <div class="ms-2">
@@ -426,7 +473,7 @@
             <img
               style="width: 80px"
               class="img-fluid rounded-circle"
-              src="asset/grasindo.png"
+              src="asset/grasindo.webp"
               alt=""
             />
             <div class="ms-2">
@@ -440,7 +487,7 @@
             <img
               style="width: 80px"
               class="img-fluid rounded-circle"
-              src="asset/divaPress.jpg"
+              src="asset/divaPress.webp"
               alt=""
             />
             <div class="ms-2">
@@ -454,7 +501,7 @@
             <img
               style="width: 80px"
               class="img-fluid rounded-circle"
-              src="asset/andi.png"
+              src="asset/andi.webp"
               alt=""
             />
             <div class="ms-2">
@@ -465,7 +512,7 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid m-0 py-5">
+    <section id="service" class="container-fluid m-0 py-5">
       <div class="container-lg p-0">
         <h2 class="textPrimaryColor fw-bold">Service that we provide</h2>
         <div class="row m-0 justify-content-between mt-5">
@@ -478,8 +525,9 @@
             </p>
             <img
               class="img-fluid rounded-bottom-4"
-              src="asset/onlinePayment.jpg"
-              alt=""
+              src="asset/onlinePayment.webp"
+              alt="online payment"
+              loading="lazy"
             />
           </div>
           <div class="col-3 bg-light rounded-3 p-0 rounded-3 shadow-sm h-100">
@@ -491,8 +539,9 @@
             </p>
             <img
               class="img-fluid rounded-bottom-4"
-              src="asset/cashBack.jpg"
-              alt=""
+              src="asset/cashBack.webp"
+              alt="cash back"
+              loading="lazy"
             />
           </div>
           <div class="col-3 bg-light rounded-3 p-0 rounded-3 shadow-sm">
@@ -504,13 +553,183 @@
             </p>
             <img
               class="img-fluid rounded-bottom-4"
-              src="asset/homeDelivery.jpg"
-              alt=""
+              src="asset/homeDelivery.webp"
+              alt="home delivery"
+              loading="lazy"
             />
           </div>
         </div>
       </div>
     </section>
+    <section id="faq" class="container-fluid m-0 py-5">
+      <div class="container-lg p-0">
+        <h2 class="textPrimaryColor fw-bold">Frequently Asked Questions</h2>
+        <p class="textSecondaryColor">
+          Is there anything you are still confused about? maybe this can help
+        </p>
+        <div class="row m-0 mt-5 gap-5 justify-content-between">
+          <div class="col-5 d-flex flex-row align-items-start p-0">
+            <i
+              style="border-color: #033059 !important"
+              class="bi bi-emoji-frown-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
+            ></i>
+            <div class="ms-3">
+              <h5 class="fw-semibold textSecondaryColor m-0">
+                what if the book wrapper comes in a torn state?
+              </h5>
+              <p class="mt-2 textSecondaryColor">
+                you can get 100% cash back and get new books for free.
+              </p>
+            </div>
+          </div>
+          <div class="col-5 d-flex flex-row align-items-start p-0">
+            <i
+              style="border-color: #033059 !important"
+              class="bi bi-piggy-bank-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
+            ></i>
+            <div class="ms-3">
+              <h5 class="fw-semibold textSecondaryColor m-0">
+                can i buy books in installments?
+              </h5>
+              <p class="mt-2 textSecondaryColor">
+                of course, you can! You can repay a minimum of 3 months and
+                maximum of 5 months.
+              </p>
+            </div>
+          </div>
+          <div class="col-5 d-flex flex-row align-items-start p-0">
+            <i
+              style="border-color: #033059 !important"
+              class="bi bi-car-front-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
+            ></i>
+            <div class="ms-3">
+              <h5 class="fw-semibold textSecondaryColor m-0">
+                if the courier is very long in delivery?
+              </h5>
+              <p class="mt-2 textSecondaryColor">
+                there may be obstacles on the way, but don't worry, you get 50%
+                off for your next purchase.
+              </p>
+            </div>
+          </div>
+          <div class="col-5 d-flex flex-row align-items-start p-0">
+            <i
+              style="border-color: #033059 !important"
+              class="bi bi-calendar-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
+            ></i>
+            <div class="ms-3">
+              <h5 class="fw-semibold textSecondaryColor m-0">
+                how long does it take to arrive the book?
+              </h5>
+              <p class="mt-2 textSecondaryColor">
+                for the estimate it depends on how far your location and the
+                seller are.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid h-50 bgSecondaryColor m-0">
+      <div class="container-lg py-5 p-0">
+        <div class="row gap-4">
+          <div class="col-3 m-0 p-0">
+            <div class="d-flex align-items-center">
+              <img
+                style="width: 60px"
+                class="img-fluid"
+                src="asset/whiteLogo.webp"
+                alt="book store logo"
+              />
+              <a
+                href="#home"
+                class="h3 text-decoration-none ms-3 fw-bold text-light"
+                >Book Store
+              </a>
+            </div>
+            <p class="text-light mt-4">
+              the easiest way to open a window to the world is to read, and we
+              will help you
+            </p>
+            <h4 class="text-light fw-semibold mt-5">Accepted Payments</h4>
+            <div class="row gap-2 m-0 mt-3">
+              <img
+                src="asset/dana.webp"
+                alt=""
+                class="col-3 bg-white p-3 rounded-3 img-fluid"
+              />
+              <img
+                src="asset/paypal.webp"
+                alt=""
+                class="col-3 bg-white p-3 rounded-3 img-fluid"
+              />
+              <img
+                src="asset/mandiri.webp"
+                alt=""
+                class="col-3 bg-white p-3 rounded-3 img-fluid"
+              />
+              <img
+                style="height: 50px"
+                src="asset/bca.webp"
+                alt=""
+                class="col-3 bg-white p-3 rounded-3 img-fluid"
+              />
+              <img
+                style="height: 50px"
+                src="asset/shopeePay.webp"
+                alt=""
+                class="col-3 bg-white p-3 rounded-3 img-fluid"
+              />
+              <img
+                style="height: 50px"
+                src="asset/ovo.webp"
+                alt=""
+                class="col-3 bg-white p-3 rounded-3 img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-3 m-0 p-0 text-light d-flex flex-column">
+            <h5 class="fw-semibold">Contact</h5>
+            <a class="text-decoration-none text-light m-0 mt-5"
+              >+628-2875-5000</a
+            >
+            <a class="text-decoration-none text-light m-0 mt-2"
+              >bookstore@gmail.com</a
+            >
+          </div>
+          <div class="col-3 m-0 p-0 d-flex flex-column">
+            <h5 class="text-light fw-semibold">Menu</h5>
+            <a href="#categories" class="text-decoration-none text-light m-0 mt-5"
+              >categories</a
+            >
+            <a href="#topOfWeek" class="text-decoration-none text-light m-0 mt-2"
+              >Top of week
+              <span class="bgPrimaryColor text-light py-2 px-2 rounded-3 ms-1"
+                >new!</span
+              ></a
+            >
+            <a href="#brand" class="text-decoration-none text-light m-0 mt-2"
+              >brand</a
+            >
+            <a href="#partner" class="text-decoration-none text-light m-0 mt-2"
+              >partner</a
+            >
+          </div>
+          <div class="col-2 m-0 p-0 d-flex flex-column">
+            <h5 class="text-light fw-semibold">Help</h5>
+            <a href="#categories" class="text-decoration-none text-light m-0 mt-5"
+              >service</a
+            >
+            <a href="#categories" class="text-decoration-none text-light m-0 mt-2"
+              >FAQ</a
+            >
+            <a href="#categories" class="text-decoration-none text-light m-0 mt-2"
+              >get in touch</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/popUp.js"></script>
