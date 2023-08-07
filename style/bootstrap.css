@@ -249,6 +249,32 @@ main{
   opacity: 0 !important;
 }
 
+@keyframes slide {
+  form{
+    transform: translateX(0);
+  } to {
+    transform: translateX(-100%);
+  }
+}
+
+.collabWrapper{
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.collabWrapper:hover .slide{
+  animation-play-state: paused;
+}
+
+.slide{
+  animation: 10s slide infinite linear;
+}
+
+.slide img{
+  filter: grayscale(100%);
+}
+
+
 /* end of my code */
 
 hr {
