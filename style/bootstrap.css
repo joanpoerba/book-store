@@ -205,7 +205,7 @@ body {
 
 /* my code */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
@@ -226,54 +226,106 @@ body {
   background-color: #033059 !important;
 }
 
-main{
+main {
   height: 100vh !important;
 }
 
-.card{
+.card {
   background-size: 450px;
   background-position: center;
   background-repeat: no-repeat;
   height: 250px !important;
-  transition: .5s;
+  transition: .5s !important;
   filter: grayscale(100%);
 }
 
-.card:hover{
+.card:hover {
   background-size: 400px;
-  transition: .5s;
+  transition: .5s !important;
   filter: grayscale(0);
 }
 
-.card:hover h3{
+.card:hover h3 {
   opacity: 0 !important;
 }
 
 @keyframes slide {
-  form{
+  form {
     transform: translateX(0);
-  } to {
+  }
+
+  to {
     transform: translateX(-100%);
   }
 }
 
-.collabWrapper{
+.collabWrapper {
   overflow: hidden;
   white-space: nowrap;
 }
 
-.collabWrapper:hover .slide{
+.collabWrapper:hover .slide {
   animation-play-state: paused;
 }
 
-.slide{
+.slide {
   animation: 10s slide infinite linear;
 }
 
-.slide img{
+.slide img {
   filter: grayscale(100%);
 }
 
+.line {
+  width: 30px;
+  height: 2px;
+  background: #033059;
+  transition: .5s !important;
+}
+
+.line::after,
+.line::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #033059;
+  border-radius: 100px;
+  transition: .5s !important;
+}
+
+.line::after{
+  content: "";
+  transform: translateY(-10px);
+}
+
+.line::before{
+  content: "";
+  transform: translateY(10px);
+}
+
+body.humburgerActive .line::after{
+  transform: rotate(-45deg);
+  transition: .5s !important;
+}
+
+body.humburgerActive .line{
+  background: transparent;
+  transition: .5s !important;
+}
+
+body.humburgerActive .line::before{
+  transform: rotate(45deg);
+  transition: .5s !important;
+}
+
+body.humburgerActive header{
+  align-items: start !important;
+}
+
+body.humburgerActive header nav{
+  display: block !important;
+}
 
 /* end of my code */
 
@@ -7186,7 +7238,7 @@ fieldset:disabled .btn {
 
   .spinner-border,
   .spinner-grow {
-    --bs-spinner-animation-speed: 1.5s
+    --bs-spinner-animation-speed: 1.5s 
   }
 }
 

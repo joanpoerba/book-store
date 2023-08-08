@@ -18,7 +18,7 @@
   <body class="container-fluid h-100 p-0">
     <header
       style="border-color: #0e8ed7 !important; z-index: 5"
-      class="container-fluid bg-light d-flex justify-content-center py-3 border-top border-5 border-top shadow-sm position-fixed"
+      class="container-fluid bg-light d-none d-flex justify-content-center py-3 border-top border-5 shadow-sm position-fixed"
     >
       <section
         class="container-lg d-flex flex-row justify-content-between align-items-center"
@@ -37,7 +37,7 @@
         </div>
         <form
           action=""
-          class="d-flex flex-row align-items-center border border-1 border-secondary rounded-5 py-2 px-3 w-25"
+          class="col-12 d-flex flex-row align-items-center border border-1 border-secondary rounded-5 py-2 px-3 w-25"
         >
           <i class="bi bi-search"></i>
           <input
@@ -71,18 +71,71 @@
             </li>
           </ul>
         </nav>
-        <a
+        <a href="#getInTouch"
           class="btn bgPrimaryColor rounded-2 py-1 px-3 text-light fw-semibold"
         >
           Get in touch
         </a>
       </section>
     </header>
+    <header style="border-color: #0e8ed7 !important; z-index: 5;" class="container-fluid p-0 px-3 py-3 m-0 bg-light shadow-sm position-fixed border-top border-5">
+      <div class="row flex-row justify-content-between align-items-center p-0 m-0">
+        <div class="col-6 d-flex flex-row align-items-center p-0">
+          <img class="col-4 img-fluid" src="asset/logo.webp" alt="">
+          <a href="#home" class="h3 text-decoration-none ms-2 m-0 fw-bold d-flex flex-row">
+            <span class="textPrimaryColor">Book</span>
+            <span class="textSecondaryColor">Store</span>
+          </a>
+        </div>
+        <div class="col-auto humburger d-flex justify-content-center p-0">
+          <div class="line rounded-5"></div>
+        </div>
+      </div>
+      <nav class="mt-4 d-none">
+        <form
+          action=""
+          class="d-flex flex-row align-items-center border border-1 border-secondary rounded-5 py-2 px-3 w-25 w-100"
+        >
+          <i class="bi bi-search"></i>
+          <input
+            type="text"
+            class="border-0 bg-transparent ms-2 w-100"
+            placeholder="Search book"
+          />
+        </form>
+        <ul class="text-center p-0">
+            <li class="list-unstyled mt-4">
+              <a href="#categories" class="text-decoration-none text-dark"
+                >Categories</a
+              >
+            </li>
+            <li class="list-unstyled mt-4">
+              <a href="#topOfWeek" class="text-decoration-none text-dark"
+                >Top of week</a
+              >
+            </li>
+            </li>
+            <li class="list-unstyled mt-4">
+              <a href="#service" class="text-decoration-none text-dark"
+                >Service</a
+              >
+            </li>
+            <li class="list-unstyled mt-4">
+              <a href="#faq" class="text-decoration-none text-dark">FAQ</a>
+            </li>
+            <li class="list-unstyled mt-4">
+              <a href="#getInTouch" class="btn bgPrimaryColor rounded-2 py-2 px-3 text-light fw-semibold w-100">
+                Get in touch
+              </a>
+            </li>
+        </ul>
+      </nav>
+    </header>
     <main
       id="home"
       class="container-fluid row p-0 m-0 justify-content-around align-items-center"
     >
-      <div class="col-4">
+      <div class="col-12 text-center d-flex flex-column justify-content-center">
         <h1 class="fw-bold textSecondaryColor">
           Buy some book, then your mind is open
         </h1>
@@ -90,23 +143,23 @@
           for our great future, find what book you want on our platform fastly,
           and easily
         </h5>
-        <div class="d-flex align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
           <a
-            class="col-4 btn bgPrimaryColor d-flex align-items-center text-light py-2 px-3 rounded-5 fw-semibold fs-5"
+            class="col-6 btn bgPrimaryColor d-flex justify-content-center align-items-center text-light py-2 px-3 rounded-5 fw-semibold fs-5"
             >Find some <i class="bi bi-arrow-up-right-square ms-2 fs-4"></i
           ></a>
-          <a class="ms-4 textPrimaryColor fw-medium fs-5" href="">Login</a>
+          <a class="col-4 ms-4 textPrimaryColor fw-medium fs-5" href="">Login</a>
         </div>
       </div>
-      <img class="col-4 img-fluid" src="asset/book.webp" alt="" />
+      <img class="col-4 d-none img-fluid" src="asset/book.webp" alt="" />
     </main>
     <section id="categories" class="container-fluid bgPrimaryColor py-5 m-0">
       <div class="container-lg p-0">
         <h2 class="text-light fw-bold">The shop categories</h2>
-        <div class="row justify-content-between mt-4 m-0">
+        <div class="row d-flex flex-column justify-content-between gap-5 mt-4 m-0">
           <div
             style="background-image: url('asset/ensiklopedia.webp')"
-            class="card col-2 border-0 p-0 rounded-3"
+            class="card col-12 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">
               encyclopedia
@@ -114,13 +167,13 @@
           </div>
           <div
             style="background-image: url('asset/komik.webp')"
-            class="card col-2 border-0 p-0 rounded-3"
+            class="card col-12 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">comic</h3>
           </div>
           <div
             style="background-image: url('asset/majalah.webp')"
-            class="card col-2 border-0 p-0 rounded-3"
+            class="card col-12 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">
               magazine
@@ -128,7 +181,7 @@
           </div>
           <div
             style="background-image: url('asset/resep.webp')"
-            class="card col-2 border-0 p-0 rounded-3"
+            class="card col-12 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">
               cooking
@@ -136,7 +189,7 @@
           </div>
           <div
             style="background-image: url('asset/novel.webp')"
-            class="card col-2 border-0 p-0 rounded-3"
+            class="card col-12 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">novel</h3>
           </div>
@@ -146,8 +199,8 @@
     <section id="topOfWeek" class="container-fluid bgPrimaryColor py-5 m-0">
       <div class="container-lg p-0">
         <h2 class="text-light fw-bold">The top of the week</h2>
-        <div class="row justify-content-between mt-4 m-0">
-          <div class="col-3 border-0 p-0 rounded-3">
+        <div class="row d-flex flex-column justify-content-between mt-4 m-0 gap-5">
+          <div class="col-12 border-0 p-0 rounded-3">
             <img
               style="object-fit: cover"
               class="img-fluid w-100 rounded-3"
@@ -198,7 +251,7 @@
               >Buy now</a
             >
           </div>
-          <div class="col-3 border-0 p-0 rounded-3">
+          <div class="col-12 border-0 p-0 rounded-3">
             <img
               style="object-fit: cover"
               class="img-fluid w-100 rounded-3"
@@ -249,7 +302,7 @@
               >Buy now</a
             >
           </div>
-          <div class="col-3 border-0 p-0 rounded-3">
+          <div class="col-12 border-0 p-0 rounded-3">
             <img
               style="object-fit: cover"
               class="img-fluid w-100 rounded-3"
@@ -305,7 +358,7 @@
       </div>
     </section>
     <section id="partner" class="container-fluid py-5 m-0">
-      <h2 class="container-lg textPrimaryColor fw-bold">
+      <h2 class="container-lg textPrimaryColor fw-bold p-0">
         In collaboration with
       </h2>
       <div class="collabWrapper container-fluid p-0">
@@ -368,9 +421,9 @@
     <section id="brand" class="container-fluid h-100 py-5 m-0">
       <div class="container-lg p-0">
         <h2 class="textPrimaryColor fw-bold">Choose By Brand</h2>
-        <div class="row gap-5 m-0 mt-5">
+        <div class="row justify-content-center gap-5 m-0 mt-5">
           <div
-            class="col-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -384,7 +437,7 @@
             </div>
           </div>
           <div
-            class="col-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -398,7 +451,7 @@
             </div>
           </div>
           <div
-            class="col-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -412,7 +465,7 @@
             </div>
           </div>
           <div
-            class="col-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -426,7 +479,7 @@
             </div>
           </div>
           <div
-            class="col-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -440,7 +493,7 @@
             </div>
           </div>
           <div
-            class="col-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -454,7 +507,7 @@
             </div>
           </div>
           <div
-            class="col-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -468,7 +521,7 @@
             </div>
           </div>
           <div
-            class="col-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -482,7 +535,7 @@
             </div>
           </div>
           <div
-            class="col-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -496,7 +549,7 @@
             </div>
           </div>
           <div
-            class="col-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -515,8 +568,8 @@
     <section id="service" class="container-fluid m-0 py-5">
       <div class="container-lg p-0">
         <h2 class="textPrimaryColor fw-bold">Service that we provide</h2>
-        <div class="row m-0 justify-content-between mt-5">
-          <div class="col-3 bg-light rounded-4 p-0 rounded-3 shadow-sm h-100">
+        <div class="row d-flex flex-column m-0 justify-content-between mt-5 gap-5">
+          <div class="col-12 bg-light rounded-4 p-0 rounded-3 shadow-sm h-100">
             <h3 class="fw-bold pt-4 px-4 textSecondaryColor">
               Online Payment Process
             </h3>
@@ -530,7 +583,7 @@
               loading="lazy"
             />
           </div>
-          <div class="col-3 bg-light rounded-3 p-0 rounded-3 shadow-sm h-100">
+          <div class="col-12 bg-light rounded-3 p-0 rounded-3 shadow-sm h-100">
             <h3 class="fw-bold pt-4 px-4 textSecondaryColor">
               You Can Get The Cash Back Easily
             </h3>
@@ -544,7 +597,7 @@
               loading="lazy"
             />
           </div>
-          <div class="col-3 bg-light rounded-3 p-0 rounded-3 shadow-sm">
+          <div class="col-12 bg-light rounded-3 p-0 rounded-3 shadow-sm">
             <h3 class="fw-bold pt-4 px-4 textSecondaryColor">
               Home Delivery Option
             </h3>
@@ -567,8 +620,8 @@
         <p class="textSecondaryColor">
           Is there anything you are still confused about? maybe this can help
         </p>
-        <div class="row m-0 mt-5 gap-5 justify-content-between">
-          <div class="col-5 d-flex flex-row align-items-start p-0">
+        <div class="row d-flex flex-column m-0 mt-5 gap-5 justify-content-between">
+          <div class="col-12 d-flex flex-row align-items-start p-0">
             <i
               style="border-color: #033059 !important"
               class="bi bi-emoji-frown-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
@@ -582,7 +635,7 @@
               </p>
             </div>
           </div>
-          <div class="col-5 d-flex flex-row align-items-start p-0">
+          <div class="col-12 d-flex flex-row align-items-start p-0">
             <i
               style="border-color: #033059 !important"
               class="bi bi-piggy-bank-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
@@ -597,7 +650,7 @@
               </p>
             </div>
           </div>
-          <div class="col-5 d-flex flex-row align-items-start p-0">
+          <div class="col-12 d-flex flex-row align-items-start p-0">
             <i
               style="border-color: #033059 !important"
               class="bi bi-car-front-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
@@ -612,7 +665,7 @@
               </p>
             </div>
           </div>
-          <div class="col-5 d-flex flex-row align-items-start p-0">
+          <div class="col-12 d-flex flex-row align-items-start p-0">
             <i
               style="border-color: #033059 !important"
               class="bi bi-calendar-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
@@ -630,10 +683,35 @@
         </div>
       </div>
     </section>
+    <section id="getInTouch" class="container-fluid m-0">
+      <form class="container-lg py-5 p-0">
+        <h2 class="textPrimaryColor fw-bold">Get in touch with us</h2>
+        <p class="textSecondaryColor">
+          Your message will sended to our email
+        </p>
+        <ul class="row gap-4 justify-content-between m-0 p-0 mt-5">
+          <li class="col-12 list-unstyled p-0">
+            <label for="">Username</label><br>
+            <input class="form-control w-100 border-0 bg-light rounded-3 py-2 px-3 mt-2" type="text" placeholder="Enter you username" autocomplete="off" required>
+          </li>
+          <li class="col-12 list-unstyled p-0">
+            <label for="">Email</label><br>
+            <input class="form-control w-100 border-0 bg-light rounded-3 py-2 px-3 mt-2" type="text" placeholder="Enter you email" autocomplete="off" required>
+          </li>
+          <li class="col-12 list-unstyled p-0">
+            <label for="">Message</label><br>
+            <textarea style="resize: none;" rows="8" class="form-control w-100 border-0 bg-light rounded-3 py-2 px-3 mt-2" type="text" placeholder="Enter you message"></textarea>
+          </li>
+          <li class="col-12 list-unstyled p-0 mt-1">
+            <a class="btn bgSecondaryColor w-100 text-light py-3 fs-5 fw-bold rounded-3">Send message</a>
+          </li>
+        </ul>
+      </fo>
+    </section>
     <footer class="container-fluid h-50 bgSecondaryColor m-0">
       <div class="container-lg py-5 p-0">
         <div class="row gap-4">
-          <div class="col-3 m-0 p-0">
+          <div class="col-12">
             <div class="d-flex align-items-center">
               <img
                 style="width: 60px"
@@ -688,7 +766,7 @@
               />
             </div>
           </div>
-          <div class="col-3 m-0 p-0 text-light d-flex flex-column">
+          <div class="col-12 text-light d-flex flex-column">
             <h5 class="fw-semibold">Contact</h5>
             <a class="text-decoration-none text-light m-0 mt-5"
               >+628-2875-5000</a
@@ -697,7 +775,7 @@
               >bookstore@gmail.com</a
             >
           </div>
-          <div class="col-3 m-0 p-0 d-flex flex-column">
+          <div class="col-12 d-flex flex-column">
             <h5 class="text-light fw-semibold">Menu</h5>
             <a href="#categories" class="text-decoration-none text-light m-0 mt-5"
               >categories</a
@@ -715,7 +793,7 @@
               >partner</a
             >
           </div>
-          <div class="col-2 m-0 p-0 d-flex flex-column">
+          <div class="col-12 d-flex flex-column">
             <h5 class="text-light fw-semibold">Help</h5>
             <a href="#categories" class="text-decoration-none text-light m-0 mt-5"
               >service</a
@@ -723,7 +801,7 @@
             <a href="#categories" class="text-decoration-none text-light m-0 mt-2"
               >FAQ</a
             >
-            <a href="#categories" class="text-decoration-none text-light m-0 mt-2"
+            <a href="#getInTouch" class="text-decoration-none text-light m-0 mt-2"
               >get in touch</a
             >
           </div>
@@ -734,5 +812,6 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/popUp.js"></script>
     <script src="js/like.js"></script>
+    <script src="js/humburger.js"></script>
   </body>
 </html>
