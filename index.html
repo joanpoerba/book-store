@@ -18,10 +18,10 @@
   <body class="container-fluid h-100 p-0">
     <header
       style="border-color: #0e8ed7 !important; z-index: 5"
-      class="container-fluid bg-light d-none d-flex justify-content-center py-3 border-top border-5 shadow-sm position-fixed"
+      class="container-fluid bg-light d-none d-xl-flex justify-content-center py-3 border-top border-5 shadow-sm position-fixed"
     >
       <section
-        class="container-lg d-flex flex-row justify-content-between align-items-center"
+        class="container-xxl d-flex flex-row justify-content-between align-items-center"
       >
         <div class="d-flex align-items-center">
           <img
@@ -78,9 +78,9 @@
         </a>
       </section>
     </header>
-    <header style="border-color: #0e8ed7 !important; z-index: 5;" class="container-fluid p-0 px-3 py-3 m-0 bg-light shadow-sm position-fixed border-top border-5">
+    <header style="border-color: #0e8ed7 !important; z-index: 5;" class="container-fluid d-block d-xl-none p-0 px-3 py-3 m-0 bg-light shadow-sm position-fixed border-top border-5">
       <div class="row flex-row justify-content-between align-items-center p-0 m-0">
-        <div class="col-6 d-flex flex-row align-items-center p-0">
+        <div class="col-5 col-sm-3 col-md-2 d-flex flex-row align-items-center p-0">
           <img class="col-4 img-fluid" src="asset/logo.webp" alt="">
           <a href="#home" class="h3 text-decoration-none ms-2 m-0 fw-bold d-flex flex-row">
             <span class="textPrimaryColor">Book</span>
@@ -135,7 +135,7 @@
       id="home"
       class="container-fluid row p-0 m-0 justify-content-around align-items-center"
     >
-      <div class="col-12 text-center d-flex flex-column justify-content-center">
+      <div class="col-12 col-sm-9 col-md-8 col-lg-5 text-center text-lg-start d-flex flex-column justify-content-center">
         <h1 class="fw-bold textSecondaryColor">
           Buy some book, then your mind is open
         </h1>
@@ -143,53 +143,53 @@
           for our great future, find what book you want on our platform fastly,
           and easily
         </h5>
-        <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center justify-content-lg-start align-items-center">
           <a
-            class="col-6 btn bgPrimaryColor d-flex justify-content-center align-items-center text-light py-2 px-3 rounded-5 fw-semibold fs-5"
+            class="col-6 col-sm-5 btn bgPrimaryColor d-flex justify-content-center align-items-center text-light py-2 px-3 rounded-5 fw-semibold fs-5"
             >Find some <i class="bi bi-arrow-up-right-square ms-2 fs-4"></i
           ></a>
           <a class="col-4 ms-4 textPrimaryColor fw-medium fs-5" href="">Login</a>
         </div>
       </div>
-      <img class="col-4 d-none img-fluid" src="asset/book.webp" alt="" />
+      <img class="col-4 d-none d-lg-block img-fluid" src="asset/book.webp" alt="" />
     </main>
     <section id="categories" class="container-fluid bgPrimaryColor py-5 m-0">
       <div class="container-lg p-0">
         <h2 class="text-light fw-bold">The shop categories</h2>
-        <div class="row d-flex flex-column justify-content-between gap-5 mt-4 m-0">
+        <div class="row d-flex row justify-content-between gap-5 gap-xl-2 mt-4 m-0">
           <div
-            style="background-image: url('asset/ensiklopedia.webp')"
-            class="card col-12 border-0 p-0 rounded-3"
+            style="background-image: url('asset/ensiklopedia.webp'); background-size: cover;"
+            class="card col-12 col-sm-5 col-lg-2 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">
               encyclopedia
             </h3>
           </div>
           <div
-            style="background-image: url('asset/komik.webp')"
-            class="card col-12 border-0 p-0 rounded-3"
+            style="background-image: url('asset/komik.webp'); background-size: cover;"
+            class="card col-12 col-sm-5 col-lg-2 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">comic</h3>
           </div>
           <div
-            style="background-image: url('asset/majalah.webp')"
-            class="card col-12 border-0 p-0 rounded-3"
+            style="background-image: url('asset/majalah.webp'); background-size: cover;"
+            class="card col-12 col-sm-5 col-lg-2 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">
               magazine
             </h3>
           </div>
           <div
-            style="background-image: url('asset/resep.webp')"
-            class="card col-12 border-0 p-0 rounded-3"
+            style="background-image: url('asset/resep.webp'); background-size: cover;"
+            class="card col-12 col-sm-5 col-lg-2 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">
               cooking
             </h3>
           </div>
           <div
-            style="background-image: url('asset/novel.webp')"
-            class="card col-12 border-0 p-0 rounded-3"
+            style="background-image: url('asset/novel.webp'); background-size: cover;"
+            class="card col-12 col-lg-2 border-0 p-0 rounded-3"
           >
             <h3 class="opacity-1 text-light fw-bold mt-3 text-center">novel</h3>
           </div>
@@ -199,8 +199,8 @@
     <section id="topOfWeek" class="container-fluid bgPrimaryColor py-5 m-0">
       <div class="container-lg p-0">
         <h2 class="text-light fw-bold">The top of the week</h2>
-        <div class="row d-flex flex-column justify-content-between mt-4 m-0 gap-5">
-          <div class="col-12 border-0 p-0 rounded-3">
+        <div class="row d-flex row justify-content-between mt-4 m-0 gap-5">
+          <div class="col-12 col-sm-5 col-xl-3 border-0 p-0 rounded-3">
             <img
               style="object-fit: cover"
               class="img-fluid w-100 rounded-3"
@@ -251,7 +251,7 @@
               >Buy now</a
             >
           </div>
-          <div class="col-12 border-0 p-0 rounded-3">
+          <div class="col-12 col-sm-5 col-xl-3 border-0 p-0 rounded-3">
             <img
               style="object-fit: cover"
               class="img-fluid w-100 rounded-3"
@@ -302,7 +302,7 @@
               >Buy now</a
             >
           </div>
-          <div class="col-12 border-0 p-0 rounded-3">
+          <div class="col-12 col-md-5 col-xl-3  border-0 p-0 rounded-3">
             <img
               style="object-fit: cover"
               class="img-fluid w-100 rounded-3"
@@ -421,9 +421,9 @@
     <section id="brand" class="container-fluid h-100 py-5 m-0">
       <div class="container-lg p-0">
         <h2 class="textPrimaryColor fw-bold">Choose By Brand</h2>
-        <div class="row justify-content-center gap-5 m-0 mt-5">
+        <div class="row justify-content-center gap-5 gap-xl-4 m-0 mt-5">
           <div
-            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 col-sm-5 col-md-3 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -437,7 +437,7 @@
             </div>
           </div>
           <div
-            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 col-sm-5 col-md-3 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -451,7 +451,7 @@
             </div>
           </div>
           <div
-            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 col-sm-5 col-md-3 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -465,7 +465,7 @@
             </div>
           </div>
           <div
-            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 col-sm-5 col-md-3 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -479,7 +479,7 @@
             </div>
           </div>
           <div
-            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 col-sm-5 col-md-3 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -493,7 +493,7 @@
             </div>
           </div>
           <div
-            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 col-sm-5 col-md-3 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -507,7 +507,7 @@
             </div>
           </div>
           <div
-            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 col-sm-5 col-md-3 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -521,7 +521,7 @@
             </div>
           </div>
           <div
-            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 col-sm-5 col-md-3 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -535,7 +535,7 @@
             </div>
           </div>
           <div
-            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 col-sm-5 col-md-3 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -549,7 +549,7 @@
             </div>
           </div>
           <div
-            class="col-10 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
+            class="col-10 col-sm-5 col-md-3 col-lg-3 col-xl-2 d-flex justify-content-center align-items-center bg-light shadow-sm py-2 px-3 rounded-3"
           >
             <img
               style="width: 80px"
@@ -568,8 +568,8 @@
     <section id="service" class="container-fluid m-0 py-5">
       <div class="container-lg p-0">
         <h2 class="textPrimaryColor fw-bold">Service that we provide</h2>
-        <div class="row d-flex flex-column m-0 justify-content-between mt-5 gap-5">
-          <div class="col-12 bg-light rounded-4 p-0 rounded-3 shadow-sm h-100">
+        <div class="row d-flex row m-0 justify-content-between mt-5 gap-5">
+          <div class="col-12 col-sm-5 col-xl-3 bg-light rounded-4 p-0 rounded-3 shadow-sm h-100">
             <h3 class="fw-bold pt-4 px-4 textSecondaryColor">
               Online Payment Process
             </h3>
@@ -583,7 +583,7 @@
               loading="lazy"
             />
           </div>
-          <div class="col-12 bg-light rounded-3 p-0 rounded-3 shadow-sm h-100">
+          <div class="col-12 col-sm-5 col-xl-3 bg-light rounded-3 p-0 rounded-3 shadow-sm h-100">
             <h3 class="fw-bold pt-4 px-4 textSecondaryColor">
               You Can Get The Cash Back Easily
             </h3>
@@ -597,7 +597,7 @@
               loading="lazy"
             />
           </div>
-          <div class="col-12 bg-light rounded-3 p-0 rounded-3 shadow-sm">
+          <div class="col-12 col-md-5 col-xl-3 bg-light rounded-3 p-0 rounded-3 shadow-sm">
             <h3 class="fw-bold pt-4 px-4 textSecondaryColor">
               Home Delivery Option
             </h3>
@@ -620,8 +620,8 @@
         <p class="textSecondaryColor">
           Is there anything you are still confused about? maybe this can help
         </p>
-        <div class="row d-flex flex-column m-0 mt-5 gap-5 justify-content-between">
-          <div class="col-12 d-flex flex-row align-items-start p-0">
+        <div class="row d-flex row m-0 mt-5 gap-5 justify-content-between">
+          <div class="col-12 col-lg-5 d-flex flex-row align-items-start p-0">
             <i
               style="border-color: #033059 !important"
               class="bi bi-emoji-frown-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
@@ -635,7 +635,7 @@
               </p>
             </div>
           </div>
-          <div class="col-12 d-flex flex-row align-items-start p-0">
+          <div class="col-12 col-lg-5 d-flex flex-row align-items-start p-0">
             <i
               style="border-color: #033059 !important"
               class="bi bi-piggy-bank-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
@@ -650,7 +650,7 @@
               </p>
             </div>
           </div>
-          <div class="col-12 d-flex flex-row align-items-start p-0">
+          <div class="col-12 col-lg-5 d-flex flex-row align-items-start p-0">
             <i
               style="border-color: #033059 !important"
               class="bi bi-car-front-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
@@ -665,7 +665,7 @@
               </p>
             </div>
           </div>
-          <div class="col-12 d-flex flex-row align-items-start p-0">
+          <div class="col-12 col-lg-5 d-flex flex-row align-items-start p-0">
             <i
               style="border-color: #033059 !important"
               class="bi bi-calendar-fill border border-2 rounded-3 p-1 fs-5 textSecondaryColor"
@@ -690,11 +690,11 @@
           Your message will sended to our email
         </p>
         <ul class="row gap-4 justify-content-between m-0 p-0 mt-5">
-          <li class="col-12 list-unstyled p-0">
+          <li class="col-12 col-md-5 list-unstyled p-0">
             <label for="">Username</label><br>
             <input class="form-control w-100 border-0 bg-light rounded-3 py-2 px-3 mt-2" type="text" placeholder="Enter you username" autocomplete="off" required>
           </li>
-          <li class="col-12 list-unstyled p-0">
+          <li class="col-12 col-md-5 list-unstyled p-0">
             <label for="">Email</label><br>
             <input class="form-control w-100 border-0 bg-light rounded-3 py-2 px-3 mt-2" type="text" placeholder="Enter you email" autocomplete="off" required>
           </li>
@@ -710,8 +710,8 @@
     </section>
     <footer class="container-fluid h-50 bgSecondaryColor m-0">
       <div class="container-lg py-5 p-0">
-        <div class="row gap-4">
-          <div class="col-12">
+        <div class="row gap-4 gap-xl-1">
+          <div class="col-12 col-sm-6 col-md-4 col-xl-3">
             <div class="d-flex align-items-center">
               <img
                 style="width: 60px"
@@ -734,39 +734,39 @@
               <img
                 src="asset/dana.webp"
                 alt=""
-                class="col-3 bg-white p-3 rounded-3 img-fluid"
+                class="col-3 col-sm-4 col-md-3 bg-white p-3 rounded-3 img-fluid"
               />
               <img
                 src="asset/paypal.webp"
                 alt=""
-                class="col-3 bg-white p-3 rounded-3 img-fluid"
+                class="col-3 col-sm-4 col-md-3 bg-white p-3 rounded-3 img-fluid"
               />
               <img
                 src="asset/mandiri.webp"
                 alt=""
-                class="col-3 bg-white p-3 rounded-3 img-fluid"
+                class="col-3 col-sm-4 col-md-3 bg-white p-3 rounded-3 img-fluid"
               />
               <img
-                style="height: 50px"
+                style="height: 50%"
                 src="asset/bca.webp"
                 alt=""
-                class="col-3 bg-white p-3 rounded-3 img-fluid"
+                class="col-3 col-sm-4 col-md-3 bg-white p-3 rounded-3 img-fluid"
               />
               <img
-                style="height: 50px"
+                style="height: 50%"
                 src="asset/shopeePay.webp"
                 alt=""
-                class="col-3 bg-white p-3 rounded-3 img-fluid"
+                class="col-3 col-sm-4 col-md-3 bg-white p-2 rounded-3 img-fluid"
               />
               <img
-                style="height: 50px"
+                style="height: 50%"
                 src="asset/ovo.webp"
                 alt=""
-                class="col-3 bg-white p-3 rounded-3 img-fluid"
+                class="col-3 col-sm-4 col-md-3 bg-white p-3 rounded-3 img-fluid"
               />
             </div>
           </div>
-          <div class="col-12 text-light d-flex flex-column mt-3">
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-2 text-light d-flex flex-column mt-3">
             <h5 class="fw-semibold">Contact</h5>
             <a class="text-decoration-none text-light m-0 mt-2"
               >+628-2875-5000</a
@@ -775,7 +775,7 @@
               >bookstore@gmail.com</a
             >
           </div>
-          <div class="col-12 d-flex flex-column mt-3">
+          <div class="col-12 col-sm-5 col-md-3 col-lg-3 col-xl-2 d-flex flex-column mt-3">
             <h5 class="text-light fw-semibold">Menu</h5>
             <a href="#categories" class="text-decoration-none text-light m-0 mt-2"
               >categories</a
@@ -793,7 +793,7 @@
               >partner</a
             >
           </div>
-          <div class="col-12 d-flex flex-column mt-3">
+          <div class="col-12 col-xl-2 d-flex flex-column mt-3">
             <h5 class="text-light fw-semibold">Help</h5>
             <a href="#categories" class="text-decoration-none text-light m-0 mt-2"
               >service</a
