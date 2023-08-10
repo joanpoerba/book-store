@@ -13,3 +13,11 @@ function showInfoPopUp() {
     text: "Please wait about 24 hours",
   });
 }
+
+function showBuyNowPopUp() {
+  Swal.fire({
+    icon: "success",
+    title: "Thank you for buying!",
+    text: "Your order is on the way",
+  });
+}
