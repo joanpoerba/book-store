@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../asset/favicon.ico" />
+    <link rel="stylesheet" href="../style/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.20/dist/sweetalert2.min.css"
+    />
+    <title>Book store</title>
+  </head>
+  <body class="container-fluid row h-100 p-0 m-0">
+    <div
+      style="
+        height: 100vh;
+        background-image: url('../asset/payment.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      "
+      class="col-4 p-3 d-none d-lg-block"
+    >
+      <a href="product.html">
+        <img class="img-fluid col-2" src="../asset/whiteLogo.webp" alt="" />
+      </a>
+    </div>
+    <div style="height: 100vh; overflow-y: auto;" class="col-12 col-lg-8 py-3 px-2 px-lg-5">
+      <h3 class="fw-bolder textSecondaryColor">Complete your order</h3>
+      <h4 class="fw-semibold textPrimaryColor mt-4">Personal Details</h4>
+      <form action="" class="mt-4">
+        <ul class="p-0 row gy-4">
+          <li class="col-12 col-md-6 list-unstyled">
+            <label for="">First name</label>
+            <input class="form-control bg-light border-0 rounded-1" type="text" placeholder="Enter your first name">
+          </li>
+          <li class="col-12 col-md-6 list-unstyled">
+            <label for="">Last name</label>
+            <input class="form-control bg-light border-0 rounded-1" type="text" placeholder="Enter your last name">
+          </li>
+          <li class="col-12 col-md-6 list-unstyled">
+            <label for="">Email</label>
+            <input class="form-control bg-secondary border-0 rounded-1 text-light" type="text" placeholder="Enter your email" value="hellouser123@gmail.com">
+          </li>
+          <li class="col-12 col-md-6 list-unstyled">
+            <label for="">Phone number</label>
+            <input class="form-control bg-light border-0 rounded-1" type="text" placeholder="Enter your phone number">
+          </li>
+        </ul>
+      </form>
+      <h4 class="fw-semibold textPrimaryColor mt-5">Payment Details</h4>
+      <div class="row gy-5">
+        <img class="col-3 col-sm-2 col-md-1 col-lg-2 col-xl-1 col-xxl-1 h-100" src="../asset/dana.webp" alt="">
+        <img class="col-3 col-sm-2 col-md-1 col-lg-2 col-xl-1 col-xxl-1 h-100" src="../asset/paypal.webp" alt="">
+        <img class="col-3 col-sm-2 col-md-1 col-lg-2 col-xl-1 col-xxl-1 h-100" src="../asset/mandiri.webp" alt="">
+        <img class="col-3 col-sm-2 col-md-1 col-lg-2 col-xl-1 col-xxl-1 h-100" src="../asset/bca.webp" alt="">
+        <img class="col-3 col-sm-2 col-md-1 col-lg-2 col-xl-1 col-xxl-1 h-100" src="../asset/shopeePay.webp" alt="">
+        <img class="col-3 col-sm-2 col-md-1 col-lg-2 col-xl-1 col-xxl-1 h-100" src="../asset/ovo.webp" alt="">
+      </div>
+      <form action="" class="mt-4">
+        <ul class="p-0 row gy-4">
+          <li class="col-12 col-md-6 list-unstyled">
+            <label for="">Card header name</label>
+            <input class="form-control bg-light border-0 rounded-1" type="text" placeholder="Enter your card header name">
+          </li>
+          <li class="col-12 col-md-6 list-unstyled">
+            <label for="">Card number</label>
+            <input class="form-control bg-light border-0 rounded-1" type="text" placeholder="Enter your card number">
+          </li>
+        </ul>
+      </form>
+      <h4 class="fw-semibold textPrimaryColor mt-4">Shipping Details</h4>
+      <form action="" class="mt-4 pb-3 pb-lg-0">
+        <ul class="p-0 row gy-4">
+          <li class="col-12 col-md-6 list-unstyled">
+            <label for="">Adress</label>
+            <input class="form-control bg-light border-0 rounded-1" type="text" placeholder="Enter your adress">
+          </li>
+          <li class="col-12 col-md-6 list-unstyled">
+            <label for="">City</label>
+            <input class="form-control bg-light border-0 rounded-1" type="text" placeholder="Enter your city">
+          </li>
+          <li class="col-12 col-md-6 list-unstyled">
+            <label for="">State</label>
+            <input class="form-control bg-light border-0 rounded-1" type="text" placeholder="Enter your state">
+          </li>
+          <li class="col-12 col-md-6 list-unstyled">
+            <label for="">Postal code</label>
+            <input class="form-control bg-light border-0 rounded-1" type="text" placeholder="Enter your postal code">
+          </li>
+          <li class="col-6 list-unstyled">
+            <a href="product.html" class="col-12 btn btn-outline-danger rounded-2 py-2 fw-semibold">Cencle</a>
+          </li>
+          <li class="col-6 list-unstyled">
+            <button style="background: #0e8ed7;" class="col-12 btn rounded-2 py-2 fw-semibold text-light">Complate Purchase</button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </body>
+</html>
