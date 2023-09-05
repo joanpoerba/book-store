@@ -1,0 +1,127 @@
+@import url('https://fonts.cdnfonts.com/css/tt-norms-pro');
+
+*{
+  font-family: 'TT Norms Pro', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.textPrimaryColor {
+  color: #0e8ed7;
+}
+
+.textSecondaryColor {
+  color: #033059;
+}
+
+.bgPrimaryColor {
+  background-color: #0e8ed7 !important;
+}
+
+.bgSecondaryColor {
+  background-color: #033059 !important;
+}
+
+main {
+  height: 100vh !important;
+}
+
+.card {
+  background-size: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px !important;
+  transition: .5s !important;
+  filter: grayscale(100%);
+}
+
+.card:hover {
+  background-size: 400px;
+  transition: .5s !important;
+  filter: grayscale(0);
+}
+
+.card:hover h3 {
+  opacity: 0 !important;
+}
+
+@keyframes slide {
+  form {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.collabWrapper {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.collabWrapper:hover .slide {
+  animation-play-state: paused;
+}
+
+.slide {
+  animation: 10s slide infinite linear;
+}
+
+.slide img {
+  filter: grayscale(100%);
+}
+
+.line {
+  width: 30px;
+  height: 2px;
+  background: #033059;
+  transition: .5s !important;
+}
+
+.line::after,
+.line::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #033059;
+  border-radius: 100px;
+  transition: .5s !important;
+}
+
+.line::after {
+  content: "";
+  transform: translateY(-10px);
+}
+
+.line::before {
+  content: "";
+  transform: translateY(10px);
+}
+
+body.humburgerActive .line::after {
+  transform: rotate(-45deg);
+  transition: .5s !important;
+}
+
+body.humburgerActive .line {
+  background: transparent;
+  transition: .5s !important;
+}
+
+body.humburgerActive .line::before {
+  transform: rotate(45deg);
+  transition: .5s !important;
+}
+
+body.humburgerActive header {
+  align-items: start !important;
+}
+
+body.humburgerActive header nav {
+  display: block !important;
+}
